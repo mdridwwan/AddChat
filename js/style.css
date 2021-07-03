@@ -48,6 +48,10 @@ table {
     margin-top: 20px;
 }
 
+#inboxsms {
+    word-wrap: break-word;
+}
+
 #sendmsg {
     text-align: center;
     padding-bottom: 1px;

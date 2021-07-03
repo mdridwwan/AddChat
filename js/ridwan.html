@@ -7,6 +7,7 @@
     <title>Ridwan Ahmed</title>
     <script src="peerjs.min.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -57,6 +58,26 @@
 
 
 <script>
+    let MySTUNServer = "stun:stun.l.google.com:19302";
+    let MyTurnServer = "numb.viagenie.ca";
+    let MyTurnUserName = "mdridwan5830011@gmail.com";
+    let MyTurnPass = "Afn@9MpabsXn52y";
+
+    let StunTurnConfig = {
+        config: {
+            'iceServers': [{
+                urls: MySTUNServer
+            }, {
+                urls: MyTurnServer,
+                credential: MyTurnPass,
+                username: MyTurnUserName
+            }]
+        }
+    }
+
+
+
+
     let peer = new Peer();
     const allmessages = document.getElementById("allmessages");
 

@@ -51,6 +51,25 @@
 
 
 <script>
+    let MySTUNServer = "stun:stun.l.google.com:19302";
+    let MyTurnServer = "numb.viagenie.ca";
+    let MyTurnUserName = "mdridwan5830011@gmail.com";
+    let MyTurnPass = "Afn@9MpabsXn52y";
+
+    let StunTurnConfig = {
+        config: {
+            'iceServers': [{
+                urls: MySTUNServer
+            }, {
+                urls: MyTurnServer,
+                credential: MyTurnPass,
+                username: MyTurnUserName
+            }]
+        }
+    }
+
+
+
     let peer = new Peer();
     const allmessages = document.getElementById("allmessages");
 
