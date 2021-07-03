@@ -23,6 +23,7 @@ table {
     height: 600PX;
     background: tomato;
     overflow: hidden;
+    margin-right: 32px;
 }
 
 #chatboxhead {
